@@ -1,0 +1,636 @@
+@charset "UTF-8";
+/*banner start*/
+.banner {
+  height: 800px;
+  position: relative;
+  background: url("../img/goggles/banner.jpg") no-repeat center center;
+  color: #fff;
+  .header {
+    position: absolute;
+    top: 260px;
+    left: 100px;
+    h1 {
+      font-size: 38px;
+      margin-bottom: 20px;
+      font-family: "arial","microsoft yahei";
+    }
+    p {
+      font-size: 22px;
+    }
+  }
+  .video {
+    position: absolute;
+    top: 420px;
+    left: 100px;
+    width: 320px;
+    height: 210px;
+    text-align: center;
+    a {
+      position: relative;
+      i {
+        position: absolute;
+        top: -104px;
+        left: -12px;
+        width: 0;
+        height: 0;
+        border: 12px solid transparent;
+        border-left-color: #fff;
+        border-left-width: 22px;
+        border-radius: 4px;
+        opacity: .8;
+        transition: all .3s;
+      }
+    }
+    a:hover {
+      i {
+        opacity: .4;
+      }
+    }
+    p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  }
+  .video-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-color: rgba(0,0,0,.8);
+    display: none;
+  }
+  .video-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -400px;
+    display: none;
+    width: 800px;
+    height: 400px;
+    //background-color: rebeccapurple;
+    z-index: 999;
+  }
+
+}
+/*banner end*/
+
+/*sub-nav start*/
+.sub-nav {
+  width: 100%;
+  background-color: #fff;
+  .w {
+    height: 60px;
+    position: relative;
+    h2 {
+      height: 60px;
+      line-height: 60px;
+      font-size: 16px;
+      a {
+        color: #707473;
+        font-family: "arial","microsoft yahei";
+      }
+    }
+    ul {
+      li {
+        float: left;
+        height: 60px;
+        line-height: 60px;
+        margin-left: 20px;
+      }
+      li:last-child {
+        a {
+          display: block;
+          width: 162px;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+          background-color: #44a8f2;
+          color: #fff;
+          transition: all .7s;
+        }
+      }
+      li:last-child:hover {
+        a {
+          background-color: #fff;
+          color: #44a8f2;
+        }
+      }
+    }
+    .go-top {
+      position: absolute;
+      top: 0;
+      right: -70px;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      display: none;
+    }
+  }
+}
+.subNavScroll {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, .8);
+}
+/*sub-nav end*/
+
+/*product-intro start*/
+.product-intro {
+  height: 638px;
+  background-image: url("../img/goggles/s1-bg.jpg");
+  padding-top: 60px;
+  color: #707473;
+  .product-s1 {
+    width: 708px;
+    margin-left: 246px;
+  }
+  p.desc {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 14px;
+  }
+  ul {
+    margin-top: 35px;
+    margin-left: 214px;
+    width: 770px;
+    text-align: center;
+    li {
+      float: left;
+      width: 154px;
+      height: 74px;
+      img {
+        width: 62px;
+        display: inline-block;
+      }
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+}
+/*product-intro end*/
+
+/*product-intro-2 start*/
+.product-intro-2 {
+  height: 800px;
+  background: url("../img/goggles/s10-bg.jpg") no-repeat center center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  h3 {
+    margin-top: 490px;
+    font-size: 24px;
+    margin-bottom: 38px;
+  }
+  p.desc {
+    font-size: 14px;
+    margin-bottom: 60px;
+  }
+  ul {
+    margin-left: 260px;
+    li {
+      float: left;
+      width: 170px;
+      p:first-child {
+        font-size: 28px;
+        margin-bottom: 5px;
+      }
+      p:last-child {
+        font-size: 14px;
+      }
+    }
+  }
+}
+/*product-intro-2 end*/
+
+/*carousel start*/
+.carousel {
+  //width: 1200px;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  .carousel-imgs {
+    width: 500%;
+    height: 800px;
+    position: absolute;
+    li {
+      float: left;
+      //width: 1200px;
+      width: 20%;
+      height: 800px;
+      background-color: #f7f8f9;
+      color: #707473;
+      text-align: center;
+      position: relative;
+      h3 {
+        width: 300px;
+        font-size: 24px;
+        position: absolute;
+        top: 570px;
+        left: 50%;
+        margin-left:-150px;
+      }
+      p {
+        //width: 1200px;
+        width: 100%;
+        font-size: 14px;
+        position: absolute;
+        top: 650px;
+      }
+      img {
+        width: 780px;
+        margin-left: 210px;
+      }
+    }
+    li.landscape {
+      background: url("../img/goggles/s3-bg-1.jpg") no-repeat center center;
+      color: #fff;
+    }
+  }
+  .carousel-points {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    margin-left: -50px;
+    width: 102px;
+    height: 14px;
+    li {
+      float: left;
+      width: 14px;
+      height: 14px;
+      border-radius: 7px;
+      background-color: #d8d8d8;
+      cursor: pointer;
+    }
+    li + li {
+      margin-left: 30px;
+    }
+    li.now {
+      background-color: #44a8f2;
+    }
+  }
+  .carousel-arrow {
+    .arrow-l,
+    .arrow-r {
+      position: absolute;
+      top: 380px;
+      width: 16px;
+      height: 40px;
+      opacity: .5;
+      cursor: pointer;
+      font-size: 50px;
+      color: #707473;
+      text-align: center;
+      font-family: simsun;
+    }
+    .arrow-l {
+      //background: url("../img/goggles/arrow-left.png") no-repeat;
+      //background-size: 16px 40px;
+      left: 20px;
+    }
+    .arrow-r {
+      //background: url("../img/goggles/arrow-right.png");
+      //background-size: 16px 40px;
+      right: 20px;
+    }
+
+  }
+}
+.carousel:hover {
+  .arrow-l,
+  .arrow-r {
+    opacity: .8;
+  }
+  .arrow-l:hover {
+    //background: url("../img/goggles/arrow-left-hover.png") no-repeat;
+    //background-size: 16px 40px;
+    color: #44a8f2;
+  }
+  .arrow-r:hover {
+    //background: url("../img/goggles/arrow-right-hover.png") no-repeat;
+    //background-size: 16px 40px;
+    color: #44a8f2;
+  }
+}
+/*carousel end*/
+
+/*panorama start*/
+.panorama {
+  height: 800px;
+  background: url("../img/goggles/s2-bg.jpg") no-repeat -596px center;
+  overflow: hidden;
+  cursor: move;
+  .panorama-text {
+    margin-top: 648px;
+    color: #fff;
+    text-align: center;
+    h3 {
+      font-size: 24px;
+      margin-bottom: 38px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+/*panorama end*/
+
+/*carousel-control start */
+.carousel-control {
+  width: 900px;
+  height: 570px;
+  position: relative;
+  margin: 50px 150px;
+  .control {
+    width: 900px;
+    height: 570px;
+    overflow: hidden;
+    position: relative;
+    .control-imgs {
+      width: 500%;
+      height: 570px;
+      position: absolute;
+      li {
+        float: left;
+        width: 900px;
+        height: 570px;
+        background-color: #f7f8f9;
+        color: #f1f2f6;
+        position: relative;
+        img {
+          width: 450px;
+          height: 570px;
+        }
+        .img-desc {
+          width: 450px;
+          height: 570px;
+          box-sizing: border-box;
+          padding: 228px 0 0 80px;
+          color: #707473;
+          h3 {
+            font-size: 24px;
+            height: 70px;
+          }
+          p {
+            width: 284px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .control-points {
+    /*position: absolute;
+    bottom: -30px;
+    left: 530px;*/
+    width: 102px;
+    height: 14px;
+    margin: 20px 399px;
+    li {
+      float: left;
+      width: 14px;
+      height: 14px;
+      border-radius: 7px;
+      background-color: #d8d8d8;
+      cursor: pointer;
+    }
+    li + li {
+      margin-left: 30px;
+    }
+    li.now {
+      background-color: #44a8f2;
+    }
+  }
+  .control-arrow {
+    .arrow-l,
+    .arrow-r {
+      position: absolute;
+      top: 265px;
+      width: 16px;
+      height: 40px;
+      cursor: pointer;
+      opacity: .5;
+      font-size: 50px;
+      color: #707473;
+      text-align: center;
+      font-family: simsun;
+    }
+    .arrow-l {
+      left: -110px;
+      //background: url("../img/goggles/arrow-left.png") no-repeat;
+      //background-size: 16px 40px;
+    }
+    .arrow-r {
+      right: -110px;
+      //background: url("../img/goggles/arrow-right.png");
+      //background-size: 16px 40px;
+    }
+
+  }
+}
+.carousel-control:hover {
+  .arrow-l,
+  .arrow-r {
+    opacity: .8;
+  }
+  .arrow-l:hover {
+    //background: url("../img/goggles/arrow-left-hover.png") no-repeat;
+    //background-size: 16px 40px;
+    color: #44a8f2;
+  }
+  .arrow-r:hover {
+    //background: url("../img/goggles/arrow-right-hover.png") no-repeat;
+    //background-size: 16px 40px;
+    color: #44a8f2;
+  }
+}
+.fly-control {
+  text-align: center;
+  color: #707473;
+  margin-bottom: 36px;
+  h3 {
+    height: 70px;
+    font-size: 24px;
+  }
+  p {
+    height: 50px;
+    font-size: 14px;
+  }
+}
+/*carousel-control end */
+
+/*product-intro-3 start*/
+.intro-3 {
+  background: url("../img/goggles/s6-bg.jpg") no-repeat center center;
+  h3 {
+    margin-top: 610px;
+  }
+  p.desc {
+    font-size: 14px;
+    padding: 0 100px;
+    margin-bottom: 60px;
+  }
+}
+/*product-intro-3 end*/
+
+/*detail-imgs start*/
+.detail-imgs {
+  width: 100%;
+  height: 400px;
+  //position: relative;
+  margin-bottom: 40px;
+  div {
+    //position: absolute;
+    //top: 0;
+    //height: 200px;
+    overflow: hidden;
+    img {
+      transition: transform .5s;
+      transform: scale(1.05);
+    }
+    img:hover {
+      transition: transform .5s;
+      transform: scale(1.25);
+    }
+  }
+  //.detail-1 {
+  //  width: 25%;
+  //  left: 0;
+  //}
+  //.detail-2 {
+  //  width: 50%;
+  //  left: 300px;
+  //}
+  //.detail-3 {
+  //  width: 25%;
+  //  height: 400px;
+  //  left: 900px;
+  //}
+  //.detail-4 {
+  //  width: 50%;
+  //  top: 200px;
+  //  left: 0;
+  //}
+  //.detail-5 {
+  //  width: 25%;
+  //  top: 200px;
+  //  left: 600px;
+  //}
+}
+/*detail-imgs end*/
+
+
+/*usb-api start*/
+.usb-api {
+  height: 930px;
+  background: url("../img/goggles/s7-bg-d.jpg") no-repeat 0px center;
+  background-size: 1200px;
+  position: relative;
+  margin-top: 80px;
+  font-size: 14px;
+  color: #707473;
+  img {
+    width: 623px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -310px;
+  }
+  span,
+  h3,
+  p {
+    position: absolute;
+  }
+  span.api-one {
+    top: 465px;
+    left: -50px;
+  }
+  span.api-two {
+    top: 600px;
+    left: 152px;
+  }
+  span.api-three {
+    top: 670px;
+    left: 540px;
+  }
+  span.api-four {
+    top: 600px;
+    left: 930px;
+  }
+  span.api-five {
+    top: 465px;
+    right: -18px;
+  }
+  h3 {
+    top: 805px;
+    left: 518px;
+    font-size: 24px;
+  }
+  p {
+    top: 872px;
+    left: 384px;
+  }
+}
+.api-details {
+  div {
+    width: 450px;
+    height: 146px;
+    color: #707473;
+    h4 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .micro-usb,
+  .hdmi {
+    margin-right: 170px;
+    margin-left: 50px;
+  }
+}
+/*usb-api end*/
+
+/*explanation start*/
+.explanation {
+  margin-top: 66px;
+  border-top: 1px solid #e8e8e8;
+  padding: 35px 0;
+  color: #979797;
+  p {
+    line-height: 28px;
+  }
+}
+/*explanation end*/
+
+
+/*buy start*/
+.buy {
+  a {
+    display: block;
+    height: 163px;
+    background-color: #44a8f2;
+    color: #fff;
+    text-align: center;
+    transition: all 0.7s;
+    overflow: hidden;
+    h3 {
+      margin-top: 50px;
+      font-size: 35px;
+      font-family: "arial","microsoft yahei";
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  a:hover {
+    background-color: #fff;
+    color: #44a8f2;
+  }
+}
+/*buy end*/

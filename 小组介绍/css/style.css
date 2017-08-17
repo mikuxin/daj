@@ -1,0 +1,207 @@
+
+body{
+    background:url(../img/background.png) ;
+}
+/*top*/
+.top{
+    height: 100px;
+    background: rgba(0, 0, 0, 0.51);
+}
+.top ul li{
+    margin-left: 20px;
+}
+.top ul li .logo{
+  margin-top:10px;
+}
+.top ul .logo_cen{
+  margin-top: 30px;
+}
+.top ul .logo_cen a{
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
+  font-size:28px;
+  position: relative;
+}
+.top ul .logo_img{
+  height: 70px;
+  position: absolute;
+  top: -20px;
+  left: 15px;
+}
+/*会员*/
+.top ul #vip{
+  position: relative;
+}
+.top ul #vip a{
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  line-height:100px;
+  text-align: center;
+  font-size:16px;
+  font-family: "黑体";
+  font-weight: 700;
+}
+.top ul #vip a:hover{
+  background-color: rgba(171, 171, 171, 0.4);
+}
+.top ul #vip #vip_login{
+  width:200px;
+  height:250px;
+  background-color: rgb(0, 161, 222);
+  position: absolute;
+  z-index: 10;
+  left:-50px;
+  border-radius:10px;
+  text-align: center;
+  border-radius:10px;
+  display: none;
+}
+.top ul #vip #vip_login .triangle{
+  width: 0;
+  height: 0;
+  border-width: 15px;
+  border-style:solid;
+  border-color: transparent transparent #00a1de transparent;
+  position: absolute;
+  top: -30px;
+  left: 85px;
+  
+}
+.top ul #vip #vip_login #text1,#pass{
+  height: 25px;
+  margin-top: 25px;
+  background-color: rgb(158, 246, 255);
+  border-radius: 25px;
+  text-align: center;
+}
+.top ul #vip #vip_login #text_cen,#pass_cen{
+  margin-top: 5px;
+  font-size: 15px;
+  font-family: "黑体";
+  color:red;
+}
+.top ul #vip #vip_login #btn{
+  width: 169px;
+  height: 25px;
+  border-radius:25px;
+  background-color: #9ef6ff;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.top ul #vip #vip_login #btn:hover{
+  background-color: #00a9ff;
+}
+.top ul #vip #vip_login .stop{
+  width: 150px;
+  color: red;
+  margin-top: 8px;
+  margin-left: 27px;
+}
+.top ul #vip #vip_login #off{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 17px;
+  height: 17px;
+  background-color: #51514f;
+  border-radius: 15px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+/*center*/
+.box{
+    height:500px;
+    position: relative;
+    overflow: hidden;
+    margin-top:30px;
+}
+.box ul li{
+    height:500px;
+    width:1200px;
+    position: absolute;
+    display:none;
+}
+.box ul li .title{
+    float: left;
+    height: 500px;
+    width:200px;
+}
+.box ul li .title div{
+  height:100%;
+  width:100%;
+  box-shadow:0px 0px 25px 15px #f58f98 inset;
+  display: none;
+}
+.box ul li .content{
+    float: left;
+    height:500px;
+    width:1000px;
+    position: relative;
+}
+.box ul li span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    color: rgba(164, 164, 164, 0.53);
+    font-size:25px;
+    display: none;
+}
+.box ul li .content .introduce{
+    width: 600px;
+    height: 410px;
+    background-color: rgba(164, 164, 164, 0.25);
+    position: absolute;
+    left: 200px;
+    top: 35px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 40px 65px;
+  overflow: hidden;
+}
+.box ul li .content .introduce h1{
+    font-size:50px;
+    font-weight: 700;
+}
+.box ul li .content .introduce h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size:35px;
+    font-weight: 700;
+}
+.box ul li .content .introduce p{
+    font-size:20px;
+    font-weight: 700;
+    width: 266px;
+}
+.box ul li .content .introduce span{
+    font-size:15px;
+    font-weight: 700;
+    color: #000;
+    position: absolute;
+    left: 62px;
+    top:200px;
+}
+.box ul li .content .introduce .photo{
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  transform:rotate(20deg);
+}
+.box ul li .content .introduce .photo img{
+  height: 250px;
+}
+.box #box_btn{
+  height:470px;
+  position: absolute;
+  left: 50%;
+  margin-left:-241.14px;
+  top: 20px;
+}

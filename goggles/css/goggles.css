@@ -1,0 +1,553 @@
+@charset "UTF-8";
+/*banner start*/
+.banner {
+  height: 800px;
+  position: relative;
+  background: url("../img/goggles/banner.jpg") no-repeat center center;
+  color: #fff;
+}
+.banner .header {
+  position: absolute;
+  top: 260px;
+  left: 100px;
+}
+.banner .header h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  font-family: "arial", "microsoft yahei";
+}
+.banner .header p {
+  font-size: 22px;
+}
+.banner .video {
+  position: absolute;
+  top: 420px;
+  left: 100px;
+  width: 320px;
+  height: 210px;
+  text-align: center;
+}
+.banner .video a {
+  position: relative;
+}
+.banner .video a i {
+  position: absolute;
+  top: -104px;
+  left: -12px;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-left-color: #fff;
+  border-left-width: 22px;
+  border-radius: 4px;
+  opacity: .8;
+  transition: all .3s;
+}
+.banner .video a:hover i {
+  opacity: .4;
+}
+.banner .video p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.banner .video-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+.banner .video-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -400px;
+  display: none;
+  width: 800px;
+  height: 400px;
+  z-index: 999;
+}
+/*banner end*/
+/*sub-nav start*/
+.sub-nav {
+  width: 100%;
+  background-color: #fff;
+}
+.sub-nav .w {
+  height: 60px;
+  position: relative;
+}
+.sub-nav .w h2 {
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+}
+.sub-nav .w h2 a {
+  color: #707473;
+  font-family: "arial", "microsoft yahei";
+}
+.sub-nav .w ul li {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  margin-left: 20px;
+}
+.sub-nav .w ul li:last-child a {
+  display: block;
+  width: 162px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #44a8f2;
+  color: #fff;
+  transition: all .7s;
+}
+.sub-nav .w ul li:last-child:hover a {
+  background-color: #fff;
+  color: #44a8f2;
+}
+.sub-nav .w .go-top {
+  position: absolute;
+  top: 0;
+  right: -70px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  display: none;
+}
+.subNavScroll {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/*sub-nav end*/
+/*product-intro start*/
+.product-intro {
+  height: 638px;
+  background-image: url("../img/goggles/s1-bg.jpg");
+  padding-top: 60px;
+  color: #707473;
+}
+.product-intro .product-s1 {
+  width: 708px;
+  margin-left: 246px;
+}
+.product-intro p.desc {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 14px;
+}
+.product-intro ul {
+  margin-top: 35px;
+  margin-left: 214px;
+  width: 770px;
+  text-align: center;
+}
+.product-intro ul li {
+  float: left;
+  width: 154px;
+  height: 74px;
+}
+.product-intro ul li img {
+  width: 62px;
+  display: inline-block;
+}
+.product-intro ul li p {
+  margin-top: 0;
+}
+/*product-intro end*/
+/*product-intro-2 start*/
+.product-intro-2 {
+  height: 800px;
+  background: url("../img/goggles/s10-bg.jpg") no-repeat center center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.product-intro-2 h3 {
+  margin-top: 490px;
+  font-size: 24px;
+  margin-bottom: 38px;
+}
+.product-intro-2 p.desc {
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+.product-intro-2 ul {
+  margin-left: 260px;
+}
+.product-intro-2 ul li {
+  float: left;
+  width: 170px;
+}
+.product-intro-2 ul li p:first-child {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+.product-intro-2 ul li p:last-child {
+  font-size: 14px;
+}
+/*product-intro-2 end*/
+/*carousel start*/
+.carousel {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+.carousel .carousel-imgs {
+  width: 500%;
+  height: 800px;
+  position: absolute;
+}
+.carousel .carousel-imgs li {
+  float: left;
+  width: 20%;
+  height: 800px;
+  background-color: #f7f8f9;
+  color: #707473;
+  text-align: center;
+  position: relative;
+}
+.carousel .carousel-imgs li h3 {
+  width: 300px;
+  font-size: 24px;
+  position: absolute;
+  top: 570px;
+  left: 50%;
+  margin-left: -150px;
+}
+.carousel .carousel-imgs li p {
+  width: 100%;
+  font-size: 14px;
+  position: absolute;
+  top: 650px;
+}
+.carousel .carousel-imgs li img {
+  width: 780px;
+  margin-left: 210px;
+}
+.carousel .carousel-imgs li.landscape {
+  background: url("../img/goggles/s3-bg-1.jpg") no-repeat center center;
+  color: #fff;
+}
+.carousel .carousel-points {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  margin-left: -50px;
+  width: 102px;
+  height: 14px;
+}
+.carousel .carousel-points li {
+  float: left;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #d8d8d8;
+  cursor: pointer;
+}
+.carousel .carousel-points li + li {
+  margin-left: 30px;
+}
+.carousel .carousel-points li.now {
+  background-color: #44a8f2;
+}
+.carousel .carousel-arrow .arrow-l,
+.carousel .carousel-arrow .arrow-r {
+  position: absolute;
+  top: 380px;
+  width: 16px;
+  height: 40px;
+  opacity: .5;
+  cursor: pointer;
+  font-size: 50px;
+  color: #707473;
+  text-align: center;
+  font-family: simsun;
+}
+.carousel .carousel-arrow .arrow-l {
+  left: 20px;
+}
+.carousel .carousel-arrow .arrow-r {
+  right: 20px;
+}
+.carousel:hover .arrow-l,
+.carousel:hover .arrow-r {
+  opacity: .8;
+}
+.carousel:hover .arrow-l:hover {
+  color: #44a8f2;
+}
+.carousel:hover .arrow-r:hover {
+  color: #44a8f2;
+}
+/*carousel end*/
+/*panorama start*/
+.panorama {
+  height: 800px;
+  background: url("../img/goggles/s2-bg.jpg") no-repeat -596px center;
+  overflow: hidden;
+  cursor: move;
+}
+.panorama .panorama-text {
+  margin-top: 648px;
+  color: #fff;
+  text-align: center;
+}
+.panorama .panorama-text h3 {
+  font-size: 24px;
+  margin-bottom: 38px;
+}
+.panorama .panorama-text p {
+  font-size: 14px;
+}
+/*panorama end*/
+/*carousel-control start */
+.carousel-control {
+  width: 900px;
+  height: 570px;
+  position: relative;
+  margin: 50px 150px;
+}
+.carousel-control .control {
+  width: 900px;
+  height: 570px;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-control .control .control-imgs {
+  width: 500%;
+  height: 570px;
+  position: absolute;
+}
+.carousel-control .control .control-imgs li {
+  float: left;
+  width: 900px;
+  height: 570px;
+  background-color: #f7f8f9;
+  color: #f1f2f6;
+  position: relative;
+}
+.carousel-control .control .control-imgs li img {
+  width: 450px;
+  height: 570px;
+}
+.carousel-control .control .control-imgs li .img-desc {
+  width: 450px;
+  height: 570px;
+  box-sizing: border-box;
+  padding: 228px 0 0 80px;
+  color: #707473;
+}
+.carousel-control .control .control-imgs li .img-desc h3 {
+  font-size: 24px;
+  height: 70px;
+}
+.carousel-control .control .control-imgs li .img-desc p {
+  width: 284px;
+  font-size: 14px;
+}
+.carousel-control .control-points {
+  /*position: absolute;
+    bottom: -30px;
+    left: 530px;*/
+  width: 102px;
+  height: 14px;
+  margin: 20px 399px;
+}
+.carousel-control .control-points li {
+  float: left;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #d8d8d8;
+  cursor: pointer;
+}
+.carousel-control .control-points li + li {
+  margin-left: 30px;
+}
+.carousel-control .control-points li.now {
+  background-color: #44a8f2;
+}
+.carousel-control .control-arrow .arrow-l,
+.carousel-control .control-arrow .arrow-r {
+  position: absolute;
+  top: 265px;
+  width: 16px;
+  height: 40px;
+  cursor: pointer;
+  opacity: .5;
+  font-size: 50px;
+  color: #707473;
+  text-align: center;
+  font-family: simsun;
+}
+.carousel-control .control-arrow .arrow-l {
+  left: -110px;
+}
+.carousel-control .control-arrow .arrow-r {
+  right: -110px;
+}
+.carousel-control:hover .arrow-l,
+.carousel-control:hover .arrow-r {
+  opacity: .8;
+}
+.carousel-control:hover .arrow-l:hover {
+  color: #44a8f2;
+}
+.carousel-control:hover .arrow-r:hover {
+  color: #44a8f2;
+}
+.fly-control {
+  text-align: center;
+  color: #707473;
+  margin-bottom: 36px;
+}
+.fly-control h3 {
+  height: 70px;
+  font-size: 24px;
+}
+.fly-control p {
+  height: 50px;
+  font-size: 14px;
+}
+/*carousel-control end */
+/*product-intro-3 start*/
+.intro-3 {
+  background: url("../img/goggles/s6-bg.jpg") no-repeat center center;
+}
+.intro-3 h3 {
+  margin-top: 610px;
+}
+.intro-3 p.desc {
+  font-size: 14px;
+  padding: 0 100px;
+  margin-bottom: 60px;
+}
+/*product-intro-3 end*/
+/*detail-imgs start*/
+.detail-imgs {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 40px;
+}
+.detail-imgs div {
+  overflow: hidden;
+}
+.detail-imgs div img {
+  transition: transform .5s;
+  transform: scale(1.05);
+}
+.detail-imgs div img:hover {
+  transition: transform .5s;
+  transform: scale(1.25);
+}
+/*detail-imgs end*/
+/*usb-api start*/
+.usb-api {
+  height: 930px;
+  background: url("../img/goggles/s7-bg-d.jpg") no-repeat 0px center;
+  background-size: 1200px;
+  position: relative;
+  margin-top: 80px;
+  font-size: 14px;
+  color: #707473;
+}
+.usb-api img {
+  width: 623px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -310px;
+}
+.usb-api span,
+.usb-api h3,
+.usb-api p {
+  position: absolute;
+}
+.usb-api span.api-one {
+  top: 465px;
+  left: -50px;
+}
+.usb-api span.api-two {
+  top: 600px;
+  left: 152px;
+}
+.usb-api span.api-three {
+  top: 670px;
+  left: 540px;
+}
+.usb-api span.api-four {
+  top: 600px;
+  left: 930px;
+}
+.usb-api span.api-five {
+  top: 465px;
+  right: -18px;
+}
+.usb-api h3 {
+  top: 805px;
+  left: 518px;
+  font-size: 24px;
+}
+.usb-api p {
+  top: 872px;
+  left: 384px;
+}
+.api-details div {
+  width: 450px;
+  height: 146px;
+  color: #707473;
+}
+.api-details div h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.api-details div p {
+  font-size: 14px;
+}
+.api-details .micro-usb,
+.api-details .hdmi {
+  margin-right: 170px;
+  margin-left: 50px;
+}
+/*usb-api end*/
+/*explanation start*/
+.explanation {
+  margin-top: 66px;
+  border-top: 1px solid #e8e8e8;
+  padding: 35px 0;
+  color: #979797;
+}
+.explanation p {
+  line-height: 28px;
+}
+/*explanation end*/
+/*buy start*/
+.buy a {
+  display: block;
+  height: 163px;
+  background-color: #44a8f2;
+  color: #fff;
+  text-align: center;
+  transition: all 0.7s;
+  overflow: hidden;
+}
+.buy a h3 {
+  margin-top: 50px;
+  font-size: 35px;
+  font-family: "arial", "microsoft yahei";
+}
+.buy a p {
+  font-size: 18px;
+}
+.buy a:hover {
+  background-color: #fff;
+  color: #44a8f2;
+}
+/*buy end*/

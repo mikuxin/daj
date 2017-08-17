@@ -1,0 +1,167 @@
+
+/*banner的开始*/
+.banner{
+    width: 100%;
+    height: 750px;
+    background: url("../img/banner.jpg") no-repeat -300px 0 ;
+    /*position: relative;*/
+    color: white;
+}
+.banner .w h1{
+    font-size: 48px;
+    /*color: white;*/
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+.banner .w .font-ad{
+    font-size:32px;
+    font-weight: 300;
+    position: absolute;
+    top: 260px;
+    left: 100px;
+}
+.banner .w .font-small{
+    color: #707473;
+    position: absolute;
+    top: 700px;
+    left:100px;
+}
+.banner .slide{
+    position: absolute;
+    top: 415px;
+    left: 100px;
+}
+.banner .slide li{
+  /*  width: 320px;
+    height: 180px;*/
+    width: 320px;
+    height: 200px;
+    background-color: linen;
+    position: absolute;
+}
+.banner .slide li img{
+    width: 100%;
+    height: 100%;
+}
+.banner .slide .arrow .prev,
+.banner .slide .arrow .next{
+    width: 13px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    top:75px;
+}
+.banner .slide .arrow .prev{
+    left: -80px;
+    background: url("../img/arrLeft.png");
+}
+.banner .slide .arrow .next{
+    left: 390px;
+    background: url("../img/arrRight.png");
+}
+
+
+/*banner的结束*/
+
+/*menu的开始*/
+.menu{
+    width: 1349px;
+    height: 60px;
+    background-color: #fff;
+}
+.menu .w span{
+    line-height: 60px;
+    float: left;
+    font-size:20px;
+}
+.menu .w ul{
+    float: right;
+}
+.menu .w ul li{
+    line-height: 60px;
+    float: left;
+    margin-left:30px;
+    text-align: center;
+}
+.menu .w ul li:last-child {
+    width: 160px;
+    height:60px;
+    background-color: #44a9f2;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(255,255,255,.8);
+}
+
+
+/*menu的结束*/
+
+
+/*main-top的开始*/
+.main-top{
+    height: 690px;
+    background-color: #000000;
+}
+.main-top .w .slider{
+    width: 1000px;
+    height: 540px;
+    position: relative;
+    top:100px;
+    left: 100px;
+    /*overflow: hidden;*/
+}
+.main-top .w .slider li{
+    position: absolute;
+    display: none;
+}
+.main-top .w li:first-child{
+    display: block;
+}
+.arrow2 {
+    display: none;
+}
+
+.slider:hover .arrow2 {
+    display: block;
+}
+.arrow-left,
+.arrow-right {
+    font-family: "SimSun", "宋体";
+    width: 30px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+}
+.arrow-left:hover,
+.arrow-right:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+
+/*main-top的结束*/
+/*
+.main-t{
+    width: 1349px;
+    height: 800px;
+    background: url("../img/tutu.png");
+    background-size:100% 100%;
+}*/

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*页面底部 start*/
+.footer {
+  padding-top: 30px;
+  background-color: #f7f8f9;
+}
+.footer .w .about-links dl {
+  width: 200px;
+}
+.footer .w .about-links dl dt {
+  height: 36px;
+}
+.footer .w .about-links dl dt a {
+  color: #505050;
+}
+.footer .w .about-links dl dt a:hover {
+  color: #44a8f2;
+}
+.footer .w .about-links dl dd {
+  height: 24px;
+}
+.footer .w .about-bot {
+  margin-top: 30px;
+}
+.footer .w .about-bot .footer-logo {
+  width: 300px;
+}
+.footer .w .about-bot .footer-logo a img {
+  width: 183px;
+}
+.footer .w .about-bot .copyright {
+  text-align: center;
+  color: #a6acaa;
+}
+.footer .w .about-bot .copyright p {
+  height: 26px;
+}
+.footer .w .about-bot .copyright p a.here {
+  color: #44a8f2;
+  text-decoration: underline;
+}
+.footer .w .about-bot .copyright p span a {
+  text-decoration: underline;
+}
+.footer .w .about-bot .share {
+  margin-right: 130px;
+}
+.footer .w .about-bot .share .iconfont {
+  color: #6a6e6a;
+  font-size: 24px;
+}
+.footer .w .about-bot .share .iconfont:hover {
+  color: #44a8f2;
+}
+/*页面底部 end*/

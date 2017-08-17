@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .slide{
+      height: 500px;
+      position: relative;
+    }
+    .slide ul{
+      margin: 100px auto 0;
+      width: 600px;
+    }
+    .slide li{
+      position: absolute;
+      left: 200px;
+      /*top:100px;*/
+    }
+    .slide li img{
+      width: 100%;
+    }
+    /*ddddd*/
+    .arrowc{
+      opacity: 0;
+      position: relative;
+      z-index: 99;
+      top:50%;
+      cursor: pointer;
+    }
+    .arrowc .arrowc_l{
+      font-size:80px;
+      top:50%;
+      margin-top: -30px;
+      font-family:"宋体";
+      font-weight: 700;
+      position: absolute;
+      left: 0px;
+    }
+    .arrowc .arrowc_r{
+      font-size:80px;
+      top:50%;
+      margin-top: -30px;
+      font-family:"宋体";
+      position: absolute;
+      right: 100px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+<div class="nbarea">
+  <div class="nbarea" id="nbarea">
+    <div class="slide w" id="slide">
+      <ul>
+        <li><img src="../imgs/101.jpg" alt=""></li>
+        <li><img src="../imgs/102.png" alt=""></li>
+        <li><img src="../imgs/103.jpg" alt=""></li>
+        <li><img src="../imgs/104.jpg" alt=""></li>
+        <li id="last"><img src="../imgs/105.jpg" alt=""></li>
+      </ul>
+      <div class="arrowc" id="arrow">
+        <a href="javascript:;" class="arrowc_l" id="arrowc_l">&lt;</a>
+        <a href="javascript:;" class="arrowc_r" id="arrowc_r">&gt;</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../js/animate缓动.js"></script>
+<script>
+  var datas= [
+    {
+      "width": 400,
+      "top": 250,
+      "left": 50,
+      "opacity": 0.2,
+      "zIndex": 2
+    },
+    {
+      "width": 500,
+      "top": 150,
+      "left": 200,
+      "opacity": 0.8,
+      "zIndex": 3
+    },
+    
+    {
+      "width": 600,
+      "top": 100,
+      "left": 380,
+      "opacity": 1,
+      "zIndex":5
+    },
+    
+    {
+      "width": 500,
+      "top":150,
+      "left": 700,
+      "opacity": 0.8,
+      "zIndex": 3
+    },
+    
+    {
+      "width": 400,
+      "top": 250,
+      "left": 900,
+      "opacity": 0.2,
+      "zIndex": 2
+    }
+  
+  
+  ];
+  
+  var nbarea=document.getElementById("nbarea");
+  var lis=nbarea.getElementsByTagName("li");
+  var arrow=document.getElementById("arrow");
+  var arrowc_l=document.getElementById("arrowc_l");
+  var arrowc_r=document.getElementById("arrowc_r");
+  
+  for(var i=0;i<lis.length;i++){
+    animate(lis[i],datas[i]);
+  }
+  nbarea.onmouseover=function () {
+    animate(arrow,{opacity:1});
+  }
+  nbarea.onmouseout=function () {
+    animate(arrow,{opacity:0});
+  }
+  
+  
+  arrowc_r.onclick=function () {
+    
+    datas.unshift(datas.pop());
+    for(var i=0;i<lis.length;i++){
+      animate(lis[i],datas[i]);
+      
+    }
+  }
+  arrowc_l.onclick=function () {
+    
+    datas.push(datas.shift());
+    for(var i=0;i<lis.length;i++){
+      animate(lis[i],datas[i]);
+      
+    }
+  }
+</script>
+</body>
+</html>
